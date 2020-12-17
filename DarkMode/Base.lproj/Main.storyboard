@@ -79,7 +79,7 @@
                                     <segue destination="LoF-FX-ZVy" kind="showDetail" id="dqk-UY-agO"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-0q-6TH">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3zR-0q-6TH">
                                 <rect key="frame" x="16" y="170" width="51" height="31"/>
                                 <connections>
                                     <action selector="actionDarkMode:" destination="SMi-3G-UcH" eventType="valueChanged" id="XVF-vm-zyK"/>
@@ -102,6 +102,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="yAd-xP-Ve0"/>
                     <connections>
+                        <outlet property="btSwitch" destination="3zR-0q-6TH" id="Pdw-5n-LOt"/>
                         <outlet property="tlview" destination="rs8-nj-uo2" id="OJO-EN-DD4"/>
                     </connections>
                 </viewController>

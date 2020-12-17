@@ -17,6 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+      //  setup()
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
@@ -47,6 +48,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    
+//    func setup(){
+//          var mode = HomeViewController()
+//
+//          if mode.darkMode == "ligth"{
+//              window?.overrideUserInterfaceStyle = .light
+//        }else if mode.darkMode == "dark" {
+//              window?.overrideUserInterfaceStyle = .dark
+//        }else{
+//             window?.overrideUserInterfaceStyle = .light
+//        }
+//      }
 
 
 }

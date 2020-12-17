@@ -10,24 +10,42 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var btSwitch: UISwitch!
     @IBOutlet var tlview: UIView!
+   
+    weak var reference: FinalViewController?
     
-    // implementar 
-   // var darkMode: Bool
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector:#selector(notificationObject(_:)), name: NSNotification.Name("darkMode"), object: nil)
+    
+    }
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        setuoView()
+    }
+      
+    @objc func notificationObject(_ notification: Notification){
+               
+        if notification.name == NSNotification.Name("darkMode"){
+            setuoView()
+        }
     }
     
     @IBAction func actionDarkMode(_ sender: UISwitch) {
        
-        if (sender.isOn == true ){
-            self.tlview.overrideUserInterfaceStyle = .light
-            darkMode = true
-            
+        if (btSwitch.isOn == true ){
+
+             ColorSettings.shared.darkModeStyle = .dark
+            setuoView()
         } else {
-            self.tlview.overrideUserInterfaceStyle = .dark
-            darkMode = false
+            ColorSettings.shared.darkModeStyle = .light
+            setuoView()
         }
+    }
+    
+    func setuoView() {
+        view.overrideUserInterfaceStyle = UIColor.backgroundColor
+      //  UILabel.textColor  = .te
     }
 }

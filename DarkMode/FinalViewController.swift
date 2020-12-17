@@ -9,19 +9,37 @@
 import UIKit
 
 class FinalViewController: UIViewController {
+    
     var teste = HomeViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       // setupView()
+
+        NotificationCenter.default.addObserver(self, selector:#selector(notificationObject(_:)), name: NSNotification.Name("darkMode"), object: nil)
+    }
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        setuoView()
+    }
+    
+    @objc func notificationObject(_ notification: Notification){
+               
+        if notification.name == NSNotification.Name("darkMode"){
+            setuoView()
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+      
     }
     // MARK: implementar
-    /*func setupView(){
-        if teste.darkMode == true{
-            overrideUserInterfaceStyle = .light
-        }else {
-            overrideUserInterfaceStyle = .dark
+  
+    
+    func setuoView() {
+        if #available(iOS 13.0, *) {
+            view.overrideUserInterfaceStyle = UIColor.backgroundColor
+        } else {
+           // view.backgroundColor = UIColor.backgroundColor
         }
-    }*/
+         //  UILabel.textColor  = .te
+       }
     
 }

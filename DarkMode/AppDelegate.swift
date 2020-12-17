@@ -11,10 +11,11 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+     var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+      //  setup()
         return true
     }
 
@@ -31,6 +32,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+//    func setup(){
+//      var mode = HomeViewController()
+//
+//      if mode.darkMode == "ligth"{
+//          window?.overrideUserInterfaceStyle = .light
+//    }else if mode.darkMode == "dark" {
+//          window?.overrideUserInterfaceStyle = .dark
+//    }else{
+//         window?.overrideUserInterfaceStyle = .light
+//    }
+//  }
 
 
 }
