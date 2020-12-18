@@ -37,9 +37,10 @@ class FinalViewController: UIViewController {
         if #available(iOS 13.0, *) {
             view.overrideUserInterfaceStyle = UIColor.backgroundColor
         } else {
+            // implementar para versão iOS abaixo do 13 
            // view.backgroundColor = UIColor.backgroundColor
         }
-         //  UILabel.textColor  = .te
+   
        }
     
 }

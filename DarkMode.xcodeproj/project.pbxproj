@@ -16,7 +16,7 @@
 		7C9AD64D258851FC002AE222 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9AD64C258851FC002AE222 /* HomeViewController.swift */; };
 		7C9AD64F258878E5002AE222 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9AD64E258878E5002AE222 /* FinalViewController.swift */; };
 		7C9AD651258AE4EF002AE222 /* ColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9AD650258AE4EF002AE222 /* ColorSettings.swift */; };
-		7C9AD654258AF75E002AE222 /* extemcion+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9AD653258AF75E002AE222 /* extemcion+color.swift */; };
+		7C9AD654258AF75E002AE222 /* extension+color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9AD653258AF75E002AE222 /* extension+color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		7C9AD64C258851FC002AE222 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C9AD64E258878E5002AE222 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		7C9AD650258AE4EF002AE222 /* ColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettings.swift; sourceTree = "<group>"; };
-		7C9AD653258AF75E002AE222 /* extemcion+color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extemcion+color.swift"; sourceTree = "<group>"; };
+		7C9AD653258AF75E002AE222 /* extension+color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 				7C9AD643258849D3002AE222 /* LaunchScreen.storyboard */,
 				7C9AD646258849D3002AE222 /* Info.plist */,
 				7C9AD650258AE4EF002AE222 /* ColorSettings.swift */,
-				7C9AD653258AF75E002AE222 /* extemcion+color.swift */,
+				7C9AD653258AF75E002AE222 /* extension+color.swift */,
 			);
 			path = DarkMode;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			files = (
 				7C9AD64F258878E5002AE222 /* FinalViewController.swift in Sources */,
 				7C9AD63D258849CE002AE222 /* ViewController.swift in Sources */,
-				7C9AD654258AF75E002AE222 /* extemcion+color.swift in Sources */,
+				7C9AD654258AF75E002AE222 /* extension+color.swift in Sources */,
 				7C9AD651258AE4EF002AE222 /* ColorSettings.swift in Sources */,
 				7C9AD639258849CE002AE222 /* AppDelegate.swift in Sources */,
 				7C9AD63B258849CE002AE222 /* SceneDelegate.swift in Sources */,
